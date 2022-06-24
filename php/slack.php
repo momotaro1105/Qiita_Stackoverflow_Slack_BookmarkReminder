@@ -1,12 +1,6 @@
 <?php
-    $appID = 'A03KZ49L6H3';
-    $teamID = 'T03BKPV9GFJ';
-    $channelID = 'C03BNE864CD';
-    $clientID = '3393811322528.3679145686581';
-    $clientSecret = '4136334e24377bd93f7eacc7053deba5';
-    
-    function getAuth($token){
-        $url = "https://slack.com/api/oauth.v2.access?client_id=3393811322528.3679145686581&client_secret=4136334e24377bd93f7eacc7053deba5&code=".$token;
+    function getAuth($token, $clientID, $clientSecret){
+        $url = "https://slack.com/api/oauth.v2.access?client_id=".$clientID."&client_secret=".$clientSecret."=".$token;
         $curl = curl_init();
         $option = [
             CURLOPT_URL => $url,

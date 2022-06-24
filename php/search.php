@@ -1,7 +1,7 @@
 <?php
-    function CustomSearch($query){
+    function CustomSearch($query, $key){
         $query = str_replace(' ', '+', $query);
-        $url = "https://www.googleapis.com/customsearch/v1?key=AIzaSyBs20wcpET19m1Cj-Btq0BOz9eyrSv4oEk&cx=57804be1c5c8a9f26&q=".$query;
+        $url = "https://www.googleapis.com/customsearch/v1?key=".$key."&q=".$query;
         $curl = curl_init();
         $option = [
             CURLOPT_URL => $url,
