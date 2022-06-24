@@ -20,11 +20,11 @@
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'kenta.aratani5011@gmail.com';
-        $mail->Password = 'wtditjbdmjrimdsk';
+        $mail->Username = '__________';
+        $mail->Password = '__________';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
-        $mail->setFrom('kenta.aratani5011@gmail.com', 'Google2');
+        $mail->setFrom('______________', 'Google2');
         $mail->addAddress($_POST['email']);
         $mail->Subject = 'Atto: Password Reset Link';
         $mail->Body = "Please reset your password from below. The link is only active for the next 10 minutes.\n".$url;
