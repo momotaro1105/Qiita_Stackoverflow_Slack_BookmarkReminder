@@ -7,7 +7,7 @@
     //         exit('DBConnection Error: '.$e->getMessage());
     //     }
     // }
-    function DbConn($dbName = 'momo115_google', $host = 'mysql57.momo115.sakura.ne.jp', $userName = 'momo115', $pwd = '1105Kenta'){
+    function DbConn($dbName = 'momo115_google', $host = 'mysql________', $userName = '_____', $pwd = '_____'){
         try {
             $dsn = 'mysql:dbname='.$dbName.';host='.$host.';charset=utf8';
             return new PDO($dsn, $userName, $pwd);
