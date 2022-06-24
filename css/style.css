@@ -1,0 +1,484 @@
+/* NOTE: 100vh will be affected by vertical padding */
+
+
+/* BASICS */
+*{
+    font-family: sans-serif;
+    font-size: 18px;
+    margin:0;
+    padding: 0;
+    color: black;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+textarea, input{
+    resize: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+a, button{
+    cursor: pointer;
+    border: none;
+}
+button{
+    border-radius: 5px;
+}
+a:hover, button:hover{
+    border-bottom: 1px solid gray;
+}
+h1{
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+u{
+    color: yellow;
+}
+#error{
+    color: red;
+}
+/* BASICS */
+
+
+
+/* HEADER */
+header{
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    font-size: 24px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+header>div{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hidden_navbar{
+    margin-right: 30px;
+}
+#logo{
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+}
+#searchbar{
+    width: 400px;
+    height: 70%;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+#searchbar>input{
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid gray;
+}
+#login_signup_btns{
+    display: flex;
+    font-size: 20px;
+}
+#login_signup_btns>li, #ask_answer_btns>a{
+    width: 100px;
+    padding: 8px;
+    border-radius: 25px;
+    background-color: #0995FF;
+}
+#login_signup_btns>li:last-child{
+    margin-left: 10px;
+}
+#login_signup_btns>li>a{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+#ask_answer_btns{
+    display: flex;
+}
+#ask_answer_btns>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-right: 10px;
+}
+#logout_dashbboard_btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#userdashboard_btn{
+    color: white;
+    background-color: black;
+    padding: 8px;
+    border-radius: 50%;
+}
+#logOut_btn{
+    margin-left: 10px;
+    width: 100px;
+    color: black;
+}
+/* HEADER */
+
+
+
+/* INDEX.PHP */
+#homepage{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ), url("../img/pencil.jpg");
+    background-position: center;
+}
+#hp_body{
+    color: white;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hp_body>*{
+    line-height: 40px;
+    color: white;
+}
+#hp_body>ol>li{
+    color: white;
+}
+/* INDEX.PHP */
+
+
+
+/* SIGNUP.PHP */
+#signup_body{
+    padding: 0 30px;
+    display: flex;
+    height: calc(100vh - 50px);
+}
+#signup_body>div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#signup_message{
+    line-height: 50px;
+}
+#signup_message>p{
+    font-size: 23px;
+    font-weight: bold;
+}
+#signup_message>ul>li>i{
+    color: #0995FF;
+    vertical-align: text-top;
+    margin-right: 15px;
+}
+#signup_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#signup_google, #signup_github{
+    height: 50px;
+}
+#signup_google>button, #signup_github>button{
+    height: 35px;
+    border: 1px solid gray;
+    background-color: white;
+    width: 400px;
+}
+#signup_google>button>svg, #signup_github>button>svg{
+    vertical-align: text-top;
+}
+#signup_email{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#signup_email>div{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-bottom: 15px;
+}
+#signup_email>div>label{
+    margin-bottom: 5px;
+}
+#toggle1, #toggle2{
+    cursor: pointer;
+    position: absolute;
+    margin-left: 370px;
+    margin-top: 322px;
+}
+#toggle2{
+    margin-top: 396px;
+}
+#signup_submit{
+    margin-top: 30px;
+    background-color: #0995FF;
+    border: none;
+    color: white;
+    height: 40px;
+}
+/* SIGNUP.PHP */
+
+
+
+/* DASHBOARD.PHP */
+#dashboardAll{
+    display: flex;
+    height: calc(100vh - 50px);
+}
+#userStatus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#userGeneral{
+    margin: 10px 20px;
+}
+#userIcon{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+#userName_form{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+#userName_form>input{
+    margin-bottom: 10px;
+}
+#userStatus>table>tbody>tr{
+    line-height: 30px;
+}
+.user_category{
+    width: 130px;
+}
+#userFeed{
+    display: flex;
+    flex-direction: column;
+}
+#userFeed>div{
+    height: 50%;
+}
+#new_displayname{
+    text-align: center;
+}
+#searchstocked{
+    margin-bottom: 20px;
+}
+.qiitastocks{
+    background-color: #55C402;
+}
+.stackoverflowstocks{
+    background-color: #F48224;
+}
+.slackstocks{
+    background-color: antiquewhite;
+}
+.qiitastocks, .slackstocks, .stackoverflowstocks{
+    margin-bottom: 5px;
+    padding: 5px 5px;
+    overflow: auto;
+}
+#stocked>div>span>a{
+    overflow: auto;
+}
+/* DASHBOARD.PHP */
+
+
+/* LOGIN.PHP, RESETFORM.PHP, RESET.PHP */
+#loginBody, #reset, #urlReset{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#loginBody>div, #reset>div, #urlReset>div{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 30px 20px;
+}
+#loginForm>*{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#loginForm>label{
+    text-align: left;
+}
+#loginEmail, #loginPwd{
+    margin-bottom: 30px;
+}
+#loginPwd{
+    margin-bottom: 60px;
+}
+#loginSubmit, #resetSubmit, #resetPwd{
+    background-color: #0995FF;
+    border: none;
+    color: white;
+}
+#toggle{
+    cursor: pointer;
+    position: absolute;
+    margin-bottom: -40px;
+    margin-right: -410px;
+}
+/* LOGIN.PHP, RESETFORM.PHP, RESET.PHP */
+
+
+
+/* RESET.PHP */
+#resetForm, #urlResetForm{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 30px 20px;
+}
+#resetForm>label, #urlResetForm>label{
+    margin-bottom: 20px;
+}
+#checkEmail, #pwd1, #pwd2{
+    margin-bottom: 30px;
+}
+
+
+
+/* DASHBOARD */
+#dashoard{
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+}
+#dashboard>div{
+    display: flex;
+    overflow: auto;
+    height: calc(100vh - 50px);
+}
+#trending, #stocked{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    overflow: auto;
+}
+#trending>div, #stocked>div{
+    display: flex;
+    flex-direction: column;
+}
+#trending>div>span, #stocked>div>span{
+    width: 100%;
+    height: 55px;
+    overflow: hidden;
+}
+#trending>div>span>a, #stocked>div>span>a{
+    font-size: 15px;
+    overflow-x: scroll;
+}
+#stockfilters{
+    display: flex;
+    flex-direction: row;
+}
+#stockfilters>button{
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#Qfilter, #SOfilter{
+    display: none;
+}
+.idfilter{
+    width: 150px;
+    margin-right: 15px;
+}
+#stockKeywords{
+    margin-top: 10px;
+    width: 80%;
+}
+#button{
+    border: none;
+}
+#slackOA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ASK */
+#askBody{
+    height: 100vh;
+    overflow: auto;
+}
+#askBody>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+}
+#askSearchBar{
+    width: 600px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    padding: 10px 10px;
+}
+#customSearchBtn{
+    padding: 10px 10px;
+    border: none;
+}
+#askBody>div{
+    display: flex;
+}
+#searchResults{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding-left: 40px;
+    padding-top: 15px;
+}
+.results{
+    height: 70px;
+    width: 100%;
+}
+#userResults{
+    width: 30%;
+    padding: 15px 15px;
+}
+.matchScore, .matchTime{
+    padding-left: 30px;
+}
